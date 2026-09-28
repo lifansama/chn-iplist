@@ -1,0 +1,34 @@
+#!name=自定义模块
+#!desc=自定义配置
+#新建模块后复制本模块内容，自行取消注释并增删修改后保存。
+#请离线使用而不通过 URL 添加以避免模块被更新重置
+#更多配置项可访问 https://github.com/LOWERTOP/Shadowrocket 查看
+
+[General]
+#dns-server = system, 114.114.114.114, 119.29.29.29, 1.0.0.1, 8.8.8.8, 8.8.4.4
+#ipv6 = false
+#prefer-ipv6 = false
+#always-reject-url-rewrite = false
+#stun-response-ip = 1.0.0.1
+
+[Rule]
+# Reject
+#RULE-SET,https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/ruleset/reject-special.list,REJECT
+
+# DIRECT
+#RULE-SET,https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/ruleset/direct-special.list,DIRECT
+
+# PROXY
+#RULE-SET,https://raw.githubusercontent.com/PaPerseller/chn-iplist/master/ruleset/proxy-special.list,PROXY,force-remote-dns
+
+#GEOIP,CN,DIRECT
+#FINAL,PROXY
+
+[Host]
+#ssid:wifi名称 = server:system
+
+[URL Rewrite]
+^https?:\/\/(www.)?(g|google)\.(cn|com\.hk) https://www.google.com 302
+
+[MITM]
+hostname = *.google.cn,*.google.com.hk

@@ -1,0 +1,23 @@
+// special
+DOMAIN-SUFFIX,developer.apple.com
+DOMAIN-SUFFIX,v2ex.com
+
+// steam proxy
+DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
+DOMAIN-SUFFIX,steamstore-a.akamaihd.net
+DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-SUFFIX,steamcommunity.com
+
+// Google
+DOMAIN-SUFFIX,ampproject.org
+DOMAIN-SUFFIX,ampproject.net
+DOMAIN-SUFFIX,goo.gl
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-KEYWORD,gmail
+DOMAIN-KEYWORD,google
+DOMAIN-KEYWORD,gstatic
+DOMAIN-KEYWORD,youtube

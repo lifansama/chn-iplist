@@ -1,0 +1,184 @@
+[
+    {
+      "remarks": "private ip",
+      "outboundTag": "direct",
+      "ip": [
+        "geoip:private"
+      ]
+    },
+    {
+      "remarks": "BT direct",
+      "outboundTag": "direct",
+      "protocol": [
+        "bittorrent"
+      ]
+    },
+    {
+      "remarks": "BT direct domain",
+      "outboundTag": "direct",
+      "domain": [
+        "announce",
+        "torrent",
+        "tracker"
+      ]
+    },
+    {
+      "enabled": false,
+      "remarks": "udp443 block",
+      "outboundTag": "block",
+      "port": "443",
+      "network": "udp"
+    },
+    {
+      "enabled": false,
+      "remarks": "httpdns block",
+      "outboundTag": "block",
+      "domain": [
+        "geosite:category-httpdns-cn"
+      ]
+    },
+    {
+      "remarks": "ads block",
+      "outboundTag": "block",
+      "domain": [
+        "domain:ads.fmdisk.com",
+        "domain:ads.feemoo.com",
+        "domain:ads.google.com",
+        "domain:afd.l.google.com",
+        "domain:mobileads.google.com",
+        "googleads",
+        "umeng",
+        "geosite:category-ads-all"
+      ]
+    },
+    {
+      "remarks": "direct domain",
+      "outboundTag": "direct",
+      "domain": [
+        "domain:cdn.jsdelivr.net",
+        "domain:gh-proxy.com",
+        "moutai",
+        "weixin"
+      ]
+    },
+    {
+      "remarks": "proxy domain",
+      "outboundTag": "proxy",
+      "domain": [
+        "domain:assets-cdn.github.com",
+        "domain:emby.wtf",
+        "domain:g.whatsapp.net",
+        "domain:us-west-2.amazonaws.com",
+        "domain:ytimg.com",
+        "domain:ggpht.com",
+        "domain:v2ex.com"
+      ]
+    },
+    {
+      "remarks": "game proxy domain",
+      "outboundTag": "proxy",
+      "domain": [
+        "domain:fanatical.com",
+        "domain:humblebundle.com",
+        "domain:underlords.com",
+        "domain:valvesoftware.com",
+        "domain:playartifact.com",
+        "domain:steam-chat.com",
+        "domain:steamcommunity.com",
+        "domain:steamgames.com",
+        "domain:steamstatic.com",
+        "domain:steamstat.us",
+        "domain:steambroadcast.akamaized.net",
+        "domain:steamcommunity-a.akamaihd.net",
+        "domain:steamstore-a.akamaihd.net",
+        "domain:steamusercontent-a.akamaihd.net",
+        "domain:steamuserimages-a.akamaihd.net",
+        "domain:steampipe.akamaized.net"
+      ]
+    },
+    {
+      "remarks": "direct domain set",
+      "outboundTag": "direct",
+      "domain": [
+        "geosite:private",
+        "geosite:apple",
+        "geosite:sina",
+        "geosite:alibaba",
+        "geosite:category-cdn-cn",
+        "geosite:category-ai-cn",
+        "geosite:steam@cn",
+        "geosite:category-game-platforms-download@cn",
+        "geosite:category-games@cn",
+        "geosite:cn"
+      ]
+    },
+    {
+      "remarks": "proxy domain set",
+      "outboundTag": "proxy",
+      "domain": [
+        "geosite:google",
+        "geosite:google-cn",
+        "geosite:telegram",
+        "geosite:github",
+        "geosite:twitter",
+        "geosite:amp",
+        "geosite:category-ai-!cn",
+        "geosite:instagram",
+        "geosite:geolocation-!cn"
+      ]
+    },
+    {
+      "remarks": "proxy ip",
+      "outboundTag": "proxy",
+      "ip": [
+        "1.0.0.1",
+        "1.1.1.1",
+        "8.8.8.8",
+        "8.8.4.4",
+        "geoip:telegram",
+        "geoip:twitter",
+        "geoip:google"
+      ]
+    },
+    {
+      "remarks": "steam direct ip",
+      "outboundTag": "direct",
+      "ip": [
+        "45.121.184.0/24",
+        "103.10.124.0/23",
+        "103.28.54.0/24",
+        "146.66.152.0/24",
+        "146.66.155.0/24",
+        "153.254.86.0/24",
+        "155.133.224.0/22",
+        "155.133.230.0/24",
+        "155.133.232.0/23",
+        "155.133.234.0/24",
+        "155.133.236.0/22",
+        "155.133.240.0/23",
+        "155.133.244.0/23",
+        "155.133.246.0/24",
+        "155.133.248.0/21",
+        "162.254.192.0/21",
+        "185.25.182.0/23",
+        "190.217.32.0/22",
+        "192.69.96.0/22",
+        "205.196.6.0/24",
+        "208.64.200.0/22",
+        "208.78.164.0/22",
+        "205.185.194.0/24"
+      ]
+    },
+    {
+      "remarks": "direct ip set",
+      "outboundTag": "direct",
+      "ip": [
+        "geoip:cn"
+      ]
+    },
+    {
+      "remarks": "final",
+      "port": "0-65535",
+      "outboundTag": "proxy"
+    }
+]
